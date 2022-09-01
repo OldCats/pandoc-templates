@@ -204,7 +204,9 @@ $endfor$
 </permissions>
 $if(abstract)$
 <abstract>
+<sec><p>
 $abstract$
+</p></sec>
 </abstract>
 $endif$
 $if(tags)$
