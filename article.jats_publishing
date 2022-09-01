@@ -172,6 +172,13 @@ $if(article.elocation-id)$
 $endif$
 $if(history)$
 <history>
+$for(history)$
+<date date-type="$history.date-type$">
+<year>$history.year$</year>
+<month>$history.month$</month>
+<day>$history.day$</day>
+</date>
+$endfor$
 </history>
 $endif$
 <permissions>
