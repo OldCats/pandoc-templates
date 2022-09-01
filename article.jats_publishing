@@ -148,15 +148,11 @@ $if(article.author-notes.con)$
 $endif$
 </author-notes>
 $endif$
-$if(date)$
-<pub-date date-type="$if(date.type)$$date.type$$else$pub$endif$" publication-format="electronic"$if(date.iso-8601)$ iso-8601-date="$date.iso-8601$"$endif$>
-$if(date.day)$
-<day>$date.day$</day>
-$endif$
-$if(date.month)$
-<month>$date.month$</month>
-$endif$
-<year>$date.year$</year>
+$if(pub-date)$
+<pub-date $if(pub-date.type)$pub-type="$pub-date.type$"$endif$>
+$if(pub-date.year)$<year>$pub-date.year$</year>$endif$
+$if(pub-date.month)$<month>$pub-date.month$</month>$endif$
+$if(pub-date.day)$<day>$pub-date.day$</day>$endif$
 </pub-date>
 $endif$
 $if(article.volume)$
