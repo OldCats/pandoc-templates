@@ -150,9 +150,9 @@ $endif$
 $endif$
 $if(pub-date)$
 <pub-date $if(pub-date.type)$pub-type="$pub-date.type$"$endif$>
-$if(pub-date.year)$<year>$pub-date.year$</year>$endif$
-$if(pub-date.month)$<month>$pub-date.month$</month>$endif$
 $if(pub-date.day)$<day>$pub-date.day$</day>$endif$
+$if(pub-date.month)$<month>$pub-date.month$</month>$endif$
+$if(pub-date.year)$<year>$pub-date.year$</year>$endif$
 </pub-date>
 $endif$
 $if(article.volume)$
@@ -174,9 +174,9 @@ $if(history)$
 <history>
 $for(history)$
 <date date-type="$history.date-type$">
-<year>$history.year$</year>
-<month>$history.month$</month>
 <day>$history.day$</day>
+<month>$history.month$</month>
+<year>$history.year$</year>
 </date>
 $endfor$
 </history>
